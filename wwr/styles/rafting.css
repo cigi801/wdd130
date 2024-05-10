@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rock+Salt&display=swap');
+
+:root {
+    --primary-color: #14213D;
+    --secondary-color: #E5E5E5;
+    --accent1-color: #FCA311;
+    --accent2-color: #000000;
+    --paragraph-color: #FFFFFF;
+
+    --heading-font: 'Comfortaa', serif;
+    --paragraph-font: 'Open Sans';
+
+    --nav-backgroung-color: #14213D;
+    --nav-link-color: #FFFFFF;
+    --nav-hover-link-color: #c6d2ed;
+    --nav-hover-background-color:#14213D;
+
+    --overlay-color: rgba(93, 93, 93, 0.692);
+}
+
+body {
+    font-family: var(--heading-font);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var( --accent1-color);
+}
+
+header img {
+    height: 275px;
+    width: auto;
+}
+
+header nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 15px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: var(--nav-hover-link-color);
+}
+
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    top: 30%;
+    left: 40%;
+    position: absolute;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000;
+    background-color: var(--overlay-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+
+article {
+    position: absolute;
+    top: 39%;
+    width: 50%;
+    padding: 20px;
+    margin-left: 5rem;
+    text-align: center;
+    display: flex;
+    background-color: var(--overlay-color);
+}
+
+article p {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-style: oblique;
+    text-shadow: 1px 2px #14213D;
+}
+
+article img {
+    order: 2;
+    margin-left: 30px;
+}
+
+.raftimages {
+    width: 40%;
+    
+}
+
+.sociallinks {
+
+}
+
