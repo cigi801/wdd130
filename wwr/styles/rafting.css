@@ -25,23 +25,41 @@ body {
 }
 
 header {
-    background-color: var( --accent1-color);
+    background-color: var(--nav-backgroung-color);
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
 }
 
-header img {
-    height: 275px;
-    width: auto;
+.navigation {
+	display: flex;
 }
+
+
+.navigation img {
+    width: 30rem;
+    height: auto;
+    margin: 0 0 0 0;
+    padding-left: 0;
+}
+
 
 header nav a {
-    color: var(--primary-color);
+    color: var(--nav-link-color);
+    font-size: 20px;
     text-decoration: none;
-    padding: 15px;
+    padding: 0 2em 0 0;
     font-weight: bold;
 }
 
 header nav a:hover {
-    color: var(--nav-hover-link-color);
+    color: var(--accent1-color);
+}
+
+
+
+.hero-container {
+    position: relative;
 }
 
 
@@ -51,13 +69,27 @@ header nav a:hover {
     height: auto;
 }
 
+
 .hero h1 {
-    top: 30%;
-    left: 40%;
     position: absolute;
-    text-align: center;
     text-shadow: 2px 2px 4px #000;
     background-color: var(--overlay-color);
+    left: 0;
+    bottom: 280px;
+    width: 100%;
+    text-align: center;
+}
+
+article {
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    max-width: 1000px;
+    margin-left: 5rem;
+    
+    display: flex;
+    background-color: var(--overlay-color);
+    align-items: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -66,35 +98,54 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-article {
-    position: absolute;
-    top: 39%;
-    width: 50%;
-    padding: 20px;
-    margin-left: 5rem;
-    text-align: center;
-    display: flex;
-    background-color: var(--overlay-color);
-}
-
 article p {
     color: #FFFFFF;
-    font-weight: 500;
+    font-weight: 400;
     font-style: oblique;
     text-shadow: 1px 2px #14213D;
+    margin-left: 1rem;
 }
 
 article img {
     order: 2;
-    margin-left: 30px;
+    margin-left: 10%;
+    width: 20%;
+    height: auto;
 }
 
 .raftimages {
-    width: 40%;
-    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
 }
 
-.sociallinks {
-
+.raftimages img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
 }
 
+figure {
+    margin: auto;
+}
+
+figcaption {
+    background-color: var(--overlay-color);
+    text-align: center;
+}
+
+footer {
+    background-color: var(--nav-backgroung-color);
+    color: var(--nav-link-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+  
+}
+
+
+
+.sociallinks a {
+    margin: 0 1rem;
+}
