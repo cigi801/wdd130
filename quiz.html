@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content = "width=device-width,initial-scale=1.0">
+        <title>Cigi Owens | WDD 130 | Quiz Page</title>
+        <meta name="description" content ="Cigi Owens, WDD 130 quiz page">
+        <meta name="author" content="Cigi Owens">
+        <link rel="stylesheet" href="styles/quiz.css">
+    </head>
+    <body>
+        <header>
+            <h1>Basic HTML and CSS Quiz</h1>
+        </header>
+        <main>
+            <form>
+                <label for="q1"><span class="numbers">1. </span>What does the acronym CSS stand for?</label>
+                <input type="text" id="q1" name="q1"><br>
+                <label for="q2"><span class="numbers">2. </span>We learned 2 valid ways to write lable and input elements. Type both ways out here:</label>
+                <textarea id="feedback" name="feedback" rows="2" placeholder="Type here..."></textarea><br>
+                <label for="q3"><span class="numbers">3. </span>Which of the following is a valid CSS comment?</label>
+                    <select id="comment" name="comment">
+                        <option value="" selected disabled>Choose One ...</option>
+                        <option>--</option>
+                        <option>/* */</option>
+                        <option>!- -</option>
+                    </select><br>
+                <label for="q4"><span class="numbers">4. </span>What is the bottom margin given this declaration?</label>
+                <img src="images/margin.jpg" alt="margin" width="250">
+                <input type="number" id="q4" name="q4"><br>
+                <button type="submit">Submit Quiz</button>
+            </form>
+        </main>
+        <footer>
+            <p>©2024 | Quiz Form | Cigi Owens</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Rubik;
+    font-size: 1.2em;
+    color: #333;
+    background: #ffffff;
+}
+
+header {
+    margin: 0 auto;
+    width: auto;
+}
+
+h1 {
+    font-family: Dosis;
+    margin: 1rem;
+    font-size: 1.5em;
+    color: rgb(59, 35, 115);
+    text-align: center;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #dfdfdf;
+    display: grid;
+}
+
+button {
+    margin: .5rem;
+    background-color: rgb(59, 35, 115);
+    color: rgb(251, 251, 252);
+   
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: rgb(102, 55, 147);
+}
+
+img {
+    height: auto;
+    padding: 6px;
+}
+
+footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    border-top: 1px solid #ccc;
+}
+
+
+.numbers {
+    color: rgb(59, 35, 115);
+}
