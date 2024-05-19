@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Assistant;
+    font-size: 1.2em;
+    color: #333;
+    background: #f9f8f8;
+}
+
+header {
+    margin: 0 auto;
+    width: auto;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 1.5em;
+    color: rgb(0, 0, 4);
+    text-align: center;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px sold rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: #e3dede;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .1rem;
+    margin: .5rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: .5rem;
+}
+
+legend {
+    padding: 0.1rem;
+    color: rgb(1, 1, 12);
+    font-size: 1em;
+}
+
+label, input, button, select, textarea {
+    font-family: Assistant;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.2rem;
+    font-size: .9rem;
+}
+
+input[type="checkbox"] {
+    width: 2rem;
+    height: 2rem;
+    vertical-align: bottom;
+}
+
+button {
+    margin: .5rem;
+    background-color: #62de38;
+    color: rgb(1, 1, 8);
+   
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: rgb(55, 147, 55);
+}
+
+footer {
+    margin: 1rem auto 0;
+    width: auto;
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    border-top: 1px solid #ccc;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
