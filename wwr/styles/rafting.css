@@ -119,6 +119,18 @@ article img {
     align-items: center;
 }
 
+.employees {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.employees img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 12/8;
+}
+
 .raftimages img {
     width: 100%;
     height: auto;
@@ -126,12 +138,58 @@ article img {
 }
 
 figure {
-    margin: auto;
+    margin: 3px;
 }
 
 figcaption {
     background-color: var(--overlay-color);
     text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+form input[type="radio"] {
+    width: auto;
+}
+
+form .radio-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+form .the-checkbox {
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+form button {
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 20px 25px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--nav-hover-link-color);
 }
 
 footer {
@@ -143,7 +201,6 @@ footer {
     padding: 0 1rem 0 1rem;
   
 }
-
 
 
 .sociallinks a {
