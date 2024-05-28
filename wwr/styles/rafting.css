@@ -31,10 +31,10 @@ header {
     align-items: center;
 }
 
+/*Navigation*/
 .navigation {
 	display: flex;
 }
-
 
 .navigation img {
     width: 30rem;
@@ -42,7 +42,6 @@ header {
     margin: 0 0 0 0;
     padding-left: 0;
 }
-
 
 header nav a {
     color: var(--nav-link-color);
@@ -57,18 +56,16 @@ header nav a:hover {
 }
 
 
-
+/*About Page*/
 .hero-container {
     position: relative;
 }
-
 
 .hero img {
     display: block;
     width: 100%;
     height: auto;
 }
-
 
 .hero h1 {
     position: absolute;
@@ -85,8 +82,7 @@ article {
     left: 0;
     bottom: 50px;
     max-width: 1000px;
-    margin-left: 5rem;
-    
+    margin-left: 5rem; 
     display: flex;
     background-color: var(--overlay-color);
     align-items: center;
@@ -119,6 +115,7 @@ article img {
     align-items: center;
 }
 
+/*Contact Page*/
 .employees {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -157,7 +154,7 @@ form label {
 }
 
 form input, form textarea {
-    width: 100%;
+    width: 90%;
     padding: 8px;
     margin-bottom: 10px;
 }
@@ -179,9 +176,8 @@ form .the-checkbox {
 
 form button {
     font-size: 18px;
-    margin-bottom: 20px;
     margin-top: 20px;
-    padding: 20px 25px;
+    padding: 15px;
     background-color: var(--primary-color);
     color: white;
     border: none;
@@ -192,6 +188,150 @@ form button:hover {
     background-color: var(--nav-hover-link-color);
 }
 
+/*Trips Page*/
+.trip-container {
+    display: grid;
+    grid-template-columns: .8fr .7fr auto;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.trip-description {
+    grid-column: 1;
+    margin-left: 20px;
+}
+
+.trip-description img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trip-table {
+    grid-column: 2;
+}
+
+.book-now {
+    grid-column: 3;
+    margin-right: 40px;
+    margin-left: 50px;
+}
+
+.book-now a {
+    font-size: 18px;
+    padding: 20px 25px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.book-now a:hover {
+    background-color: var(--nav-hover-link-color);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.call-to-action a {
+    margin-left: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 20px 25px;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+.call-to-action a:hover {
+    background-color: var(--nav-hover-link-color);
+}
+
+/*Home Page*/
+.home-container {
+    position: relative;
+}
+
+.home-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: .7;
+}
+
+.home-container h1 {
+    position: absolute;
+    background-color: var(--overlay-color);
+    bottom: 580px;
+    width: 100%;  
+}
+
+.home-sections {
+position: absolute;
+display: flex;
+align-items: center;
+align-items: center;
+}
+
+.offer {
+    position: absolute;
+    background-color: var(--overlay-color);
+    bottom: 350px;
+    width: 400px; 
+    left: 20px;
+}
+
+.offer a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+.offer a:hover {
+    color: var(--accent1-color);
+}
+
+.subscribe {
+    position: absolute;
+    width: 450px;
+    margin-left: 700px;
+    padding: 1rem;
+    bottom: 10px;
+    background-color: var(--overlay-color);
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+input, select, textarea {
+    padding: 0;
+    font-size: .9rem;
+}
+
+/*Footer*/
 footer {
     background-color: var(--nav-backgroung-color);
     color: var(--nav-link-color);
@@ -199,10 +339,18 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem 0 1rem;
-  
 }
-
 
 .sociallinks a {
     margin: 0 1rem;
+}
+
+p a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+p a:hover {
+    color: var(--accent1-color);
 }
